@@ -19,7 +19,7 @@ int main(void) {
 	enqueueProcess(readyQ, makeProcessElement("pro4", 2, 1, 2, 2));
 	enqueueProcess(readyQ, makeProcessElement("pro5", 4, 1, 3, 3));
 
-	while () {
+	while (executeRunningQueue(&currentTime, readyQ, runningQ, endedQ)) {
 
 	}
 
